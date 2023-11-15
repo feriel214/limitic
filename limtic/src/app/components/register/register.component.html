@@ -1,0 +1,121 @@
+
+<div class="container-fluid">
+    <div class="row bg-secondary py-2 px-xl-5">
+        <div class="col-lg-6 d-none d-lg-block">
+            <div class="d-inline-flex align-items-center">
+                <img src="../../../assets/img/republic.gif" alt=""   height="30px">
+            </div>
+        </div>
+        <div class="col-lg-6 text-center text-lg-right">
+            <div class="d-inline-flex align-items-center">
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a class="text-dark px-2" href="">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a class="text-dark pl-2" href="">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="row align-items-center py-3 px-xl-5" style="margin-top: -1%!important;">
+        <div class="col-lg-3 d-none d-lg-block">
+            <a href="" class="text-decoration-none">
+                <h1 class="m-0 display-5 font-weight-semi-bold">
+                    <span>
+                        <img src="../../../assets/img/1445508812.gif" alt="utm logo"  >
+                        <img src="../../../assets/img/1630530692520.jfif" alt="isi logo"  >
+                    </span>
+                </h1>
+            </a>
+        </div>
+        <div class="col-lg-6 col-6 text-left">
+           
+        </div>
+        <div class="col-lg-3 col-6 text-right">
+         
+            <a href="" class="btn border btn-lg"  routerLink="/home/presentation">
+                <i class="fas fa-home text-danger"></i>
+                 <span class="badge text-dark font-weight-bold" >Acceuil</span>
+            </a>
+         
+        </div>
+    </div>
+</div>
+<!-- Topbar End -->
+    <!-- Contact Start -->
+    <div class="container-fluid pt-5">
+    
+        <div class="row px-xl-5">
+            <div class="col-lg-7 mb-5" style="margin-left:40%!important">
+              
+                <img style="margin-bottom:4%!important" src="https://png.pngtree.com/png-vector/20220709/ourmid/pngtree-businessman-user-avatar-wearing-suit-with-red-tie-png-image_5809521.png"  width="200px" height="200px">
+                <div class="contact-form"  style="margin-left:-10%!important">
+                    <div id="success"></div>
+                    <form (submit)="onSignUp()" [formGroup]="form">
+                  
+                        <!-- firstName field -->
+                        <div class="mb-3" [ngClass]="{'has-error': submitted && form.get('firstName')?.invalid && form.get('firstName')?.touched}">
+                          <input style="width:400px!important" type="text" formControlName="firstName" class="form-control" placeholder="FirstName">
+                          <div class="text-danger" *ngIf="submitted && form.get('firstName')?.hasError('required')">
+                            {{ validationMessages.firstName.required }}
+                          </div>
+                        </div>
+      
+                        <!-- lastName field -->
+                        <div class="mb-3" [ngClass]="{'has-error': submitted && form.get('lastName')?.invalid && form.get('lastName')?.touched}">
+                          <input style="width:400px!important" type="text" formControlName="lastName" class="form-control" placeholder="LastName">
+                          <div class="text-danger" *ngIf="submitted && form.get('lastName')?.hasError('required')">
+                            {{ validationMessages.lastName.required }}
+                          </div>
+                        </div>
+      
+                        <!-- email field -->
+                        <div class="mb-3" [ngClass]="{'has-error': submitted && form.get('email')?.invalid && form.get('email')?.touched}">
+                          <input type="email" style="width:400px!important" formControlName="email" class="form-control" placeholder="Email">
+                          <div class="text-danger" *ngIf="submitted && form.get('email')?.hasError('required')">
+                            {{ validationMessages.email.required }}
+                          </div>
+                          <div class="text-danger" *ngIf="submitted && form.get('email')?.hasError('invalidEmail')">
+                            {{ validationMessages.email.invalidEmail }}
+                          </div>
+                        </div>
+      
+                        <!-- password field -->
+                        <div class="mb-3" [ngClass]="{'has-error': submitted && form.get('password')?.invalid && form.get('password')?.touched}">
+                          <input type="password" style="width:400px!important" formControlName="password" class="form-control" placeholder="Password">
+                          <div class="text-danger" *ngIf="submitted && form.get('password')?.hasError('required')">
+                            {{ validationMessages.password.required }}
+                          </div>
+                          <div class="text-danger" *ngIf="submitted && form.get('password')?.hasError('minlength')">
+                            {{ validationMessages.password.minlength }}
+                          </div>
+                        </div>
+                        <div>
+                            <button style="width:400px!important;"  type="submit" class="btn btn-danger py-2 px-4"  id="sendMessageButton">S'inscrire</button>
+                        </div>
+                        
+                        <div class="card-footer text-center pt-0 px-lg-2 px-1" style="margin-left:-60%!important;margin-top: 2%">
+                            <p class="mb-4 text-sm mx-auto">
+                              Vous avez déja pas de compte ?
+                              <a href="javascript:;" class="text-danger text-gradient font-weight-bold" routerLink="/login">Se connecter</a>
+                            </p>
+                          </div>
+                      </form>
+                     
+                </div>
+            
+            </div>
+           
+        </div>
+    </div>
+    <!-- Contact End -->
+

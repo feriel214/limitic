@@ -1,0 +1,179 @@
+ <div class="container-fluid">
+            <div class="row bg-secondary py-2 px-xl-5">
+                <div class="col-lg-6 d-none d-lg-block">
+                    <div class="d-inline-flex align-items-center">
+                        <img src="../../../assets/img/republic.gif" alt=""   height="30px">
+                    </div>
+                </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-dark px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-dark pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center py-3 px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a href="" class="text-decoration-none">
+                    <h1 class="m-0 display-5 font-weight-semi-bold">
+                        <span>
+                            <img src="../../../assets/img/1445508812.gif" alt="utm logo"  >
+                            <img src="../../../assets/img/1630530692520.jfif" alt="isi logo"  >
+                        </span>
+                    </h1>
+                </a>
+            </div>
+            <div class="col-lg-6 col-6 text-left">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search ...">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-transparent text-primary">
+                                <i class="fa fa-search"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 col-6 text-right">
+               
+                <a href="" class="btn border">
+                    <i class="fas fa-user text-primary"></i>
+                    <span class="badge" routerLink="/login">Login</span>
+                </a>
+                <a href="" class="btn border">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge" routerLink="/home/contact">CONTACT ET SUGGESTIONS</span>
+                </a>
+             
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+  
+  
+    <!-- Navbar Start -->
+    <div class="container-fluid mb-5">
+        <div class="row border-top px-xl-5">
+            <div class="col-lg-3 d-none d-lg-block">
+                <a class="btn shadow-none d-flex align-items-center justify-content-between bg-primary text-white w-100" data-toggle="collapse" href="#navbar-vertical" style="height: 65px; margin-top: -1px; padding: 0 30px;">
+                    <h6 class="m-0">Menu</h6>
+                    
+                </a>
+                <nav class="collapse show navbar navbar-vertical navbar-light align-items-start p-0 border border-top-0 border-bottom-0" id="navbar-vertical">
+                    <div class="navbar-nav w-100 overflow-hidden" style="height: 410px">
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link" data-toggle="dropdown" routerLink="/home/presentation">Présentation
+                             
+                            </a>
+                            
+                        </div>
+                        <a href="" class="nav-item nav-link" routerLink="/home/groupe/recherche">Groupes de recherche</a>
+                        <a href="" class="nav-item nav-link" routerLink="/home/list/annuaire">Annuaire</a>
+                        <a href="" class="nav-item nav-link" routerLink="/home/list/pub">Publications</a>
+                        <a href="" class="nav-item nav-link" routerLink="/home/stat/recherche">La recherche en chiffres</a>
+                        <a href="" class="nav-item nav-link" routerLink="#">Formation diplômante</a>
+                        <a href="" class="nav-item nav-link" routerLink="/home/list/researchers">Nos Chercheurs</a>
+                    
+                        
+                    </div>
+                </nav>
+            </div>
+            <div class="col-lg-9">
+                <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0">
+                    <a href="" class="text-decoration-none d-block d-lg-none">
+                        <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                
+                        <div class="navbar-nav ml-auto py-0">
+                            <!-- <a href="" *ngIf="isAuthenticated" class="nav-item nav-link" (click)="LogOut()">Logout</a> -->
+                          
+                        </div>
+                    </div>
+                </nav>
+                <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                  
+                           <router-outlet></router-outlet> 
+                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+  
+  
+  
+  
+  
+  
+    <div class="col-lg-12">
+        <div class="text-center mb-4">
+            <h2 class="section-title px-5"><span class="px-2">{{'Nos '+ 'é'.toUpperCase()+'vénements'}}</span></h2>
+        </div>
+        
+          <section id="gallery">
+            <div class="container">
+              <div class="row">
+              <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img style="width: 350px!important;height: 300px!important;" src="https://cemse.kaust.edu.sa/sites/default/files/styles/max_fullhd_scale/public/2023-09/STAT%20Workshop%202023%20fullHd%20no%20logo%20for%20web-01.jpg?itok=1jdl5gpP" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">L’atelier KAUST 2023 sur les statistiques</h5>
+                  <p class="card-text">{{"Les statistiques et la science des données jouent un rôle crucial dans de nombreuses disciplines, notamment la santé, l'environnement et le climat. L'atelier présentera les dernières recherches sur les méthodes statistiques et la modélisation pour relever les défis liés aux données du monde réel. Pendant quatre jours, une cohorte mondiale d'experts de premier plan partagera son expertise, ses résultats de recherche de pointe et ses applications pratiques des méthodes statistiques dans divers domaines. L'événement comprendra également deux sessions d'affiches au cours desquelles étudiants et postdoctorants présenteront leurs recherches. Toutes les conférences auront lieu dans le Fellowship Hall, salle 4203 du bâtiment 18. Les séances d'affiches auront lieu dans le bâtiment 18, au quatrième étage.".slice(0,200)}}</p>
+                   <a href="https://cemse.kaust.edu.sa/events/event/kaust-2023-workshop-statistics?fbclid=IwAR1WmT2XQucxD3GUyVrHyPm6xvHS1oKjjRUluFbUIYL6fwmLUjVcceBYMvs" target="_blank" class="btn btn-success text-light">Détails</a>
+                </div>
+               </div>
+              </div>
+            <div class="col-lg-4 mb-4">
+            <div class="card">
+                <img style="width: 350px!important;height: 300px!important;" src="https://scontent.ftun9-1.fna.fbcdn.net/v/t39.30808-6/391730816_3441846609397473_6619242971625846298_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=sKVgxnjOlZAAX_4OT1w&_nc_ht=scontent.ftun9-1.fna&oh=00_AfBH4o6FVsx74J05pO2AtDUKZbvV44wVj7wMvHTecB2ruQ&oe=6558DCE3" alt="" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Les journées de recherche LIMTIC</h5>
+                  <p class="card-text">{{"Les journées de recherche LIMTIC se sont tenues du 13 au 15 Octobre 2023 à Hammamet. Les travaux des doctorants qui portent sur une panoplie de domaines à savoir le NLP, le tatouage des images, le clould computing, la gestion du transport, la détection de sentiments, le traitement des images médicales, des images d'œuvres artistiques et des images satellitaires, ont été exposés.  Les projets en cours et les axes d'amélioration ont été aussi discutés durant ces journées.".slice(0,200)}}</p>
+                  <a href="https://cemse.kaust.edu.sa/events/event/kaust-2023-workshop-statistics?fbclid=IwAR1WmT2XQucxD3GUyVrHyPm6xvHS1oKjjRUluFbUIYL6fwmLUjVcceBYMvs" target="_blank" class="btn btn-success text-light">Détails</a>
+                </div>
+                </div>
+              </div>
+              <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img style="width: 350px!important;height: 300px!important;" src="https://scontent.ftun9-1.fna.fbcdn.net/v/t1.6435-9/82402730_2690353937717776_1108225725577560064_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=ES_NpS9UT48AX9Z8XZn&_nc_ht=scontent.ftun9-1.fna&oh=00_AfB5sCsqkcovxL3hQkm2Su9EBR52Xq0xy7nZjGQ8v_OfPg&oe=657C01DB"  style="width: 350px!important;height: 300px!important;" class="card-img-top">
+                <div class="card-body">
+                  <h5 class="card-title">Traitement & Analyse de l'Information</h5>
+                  <p class="card-text">{{"Formations validées et parrainées par différentes écoles doctorales internationales:
+                    Machine-Learning et perspectives: approche géométrique Data Sciences: Riemannian computation Imagerie médicale: Benchmark IRM Tesla 7".slice(0,200)}}</p>
+                    <a href="https://cemse.kaust.edu.sa/events/event/kaust-2023-workshop-statistics?fbclid=IwAR1WmT2XQucxD3GUyVrHyPm6xvHS1oKjjRUluFbUIYL6fwmLUjVcceBYMvs" target="_blank" class="btn btn-success text-light">Détails</a>
+                </div>
+               </div>
+              </div>
+            </div>
+          </div>
+          </section>
+          
+     
+    </div>
+      <!-- Products Start -->
+    
+
+  
+  <app-footer></app-footer>
+  
+  
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>

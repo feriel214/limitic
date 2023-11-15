@@ -1,0 +1,62 @@
+<div class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Modifier Annuaire</span></h2>
+    </div>
+    <div class="mb-4">
+        <div class="row">
+            <div class="col-md-6 form-group">
+                <label>Nom</label>
+                <input class="form-control" [(ngModel)]="annuaireData.firstname" type="text" placeholder="John">
+            </div>
+            <div class="col-md-6 form-group">
+                <label>Prénom</label>
+                <input class="form-control"  [(ngModel)]="annuaireData.lastname" type="text" placeholder="Doe">
+            </div>
+            <div class="col-md-6 form-group">
+                <label>E-mail</label>
+                <input class="form-control"  [(ngModel)]="annuaireData.email" type="text" placeholder="example@email.com">
+            </div>
+            <div class="col-md-6 form-group">
+                <label>Fonction / Grade</label>
+                <input class="form-control" [(ngModel)]="annuaireData.fonctionGrade" type="text" placeholder="Maitre asistant">
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label>Tél</label>
+                <input class="form-control" [(ngModel)]="annuaireData.tel" type="text" placeholder="+216 12345678">
+            </div>
+    
+            <div class="col-md-6 form-group">
+                <label>Structure De Recherche</label>
+                <input class="form-control" [(ngModel)]="annuaireData.structureDeRecherche" type="text" placeholder="IA">
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label>Etablissement</label>
+                <input class="form-control" [(ngModel)]="annuaireData.bureau.etablissement" type="text" placeholder="ISI">
+            </div>
+
+            <div class="col-md-6 form-group">
+                <label>Departement</label>
+                <input class="form-control" [(ngModel)]="annuaireData.bureau.departement" type="text" placeholder="Research">
+            </div>
+           
+            <div class="col-md-6 form-group">
+                <label>Address</label>
+                <input class="form-control" [(ngModel)]="annuaireData.bureau.address"  type="text" placeholder="123">
+            </div>
+            <div class="col-md-6 form-group">
+                <label>Fax</label>
+                <input class="form-control" [(ngModel)]="annuaireData.fax"  type="text" placeholder="123">
+            </div>
+       
+            <div>
+                <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton" (click)="editAnnuaire()">Modifier</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+

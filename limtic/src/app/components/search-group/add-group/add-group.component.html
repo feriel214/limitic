@@ -1,0 +1,60 @@
+<div class="container-fluid pt-5">
+    <div class="text-center mb-4">
+        <h2 class="section-title px-5"><span class="px-2">Ajouter Groupe</span></h2>
+    </div>
+    <div class="mb-4">
+        <div class="row">
+            <div class="col-md-4 form-group">
+                <label>Nom du Groupe</label>
+                <input class="form-control"  [(ngModel)]="groupeData.nom" type="text" placeholder="Doe">
+            </div>
+            <div class="col-md-4 form-group">
+                <label>Responsable</label>
+                    <select class="form-control" 
+                    [(ngModel)]="groupeData.responsable" 
+                    name="category" required>
+                <option *ngFor="let annuaire of annauiresList" [value]="annuaire._id">{{ annuaire.firstname+' '+annuaire.lastname }}</option>
+                </select>
+               
+            </div>
+            <div class="col-md-12 form-group">
+                <label>Descreption</label>
+                <textarea class="form-control" [(ngModel)]="groupeData.description" type="text" placeholder="Maitre asistant">
+
+                </textarea>
+             
+            </div>
+            <div class="col-md-4 form-group">
+                <label>Members</label>
+                    <select class="form-control" 
+                    [(ngModel)]="groupeData.membres" 
+                    name="category" required multiple>
+                <option *ngFor="let annuaire of annauiresList" [value]="annuaire._id">{{ annuaire.firstname+' '+annuaire.lastname }}</option>
+                </select>
+               
+            </div>
+           
+            <!-- <div class="col-md-4 form-group">
+                <label>Projects</label>
+                    <select class="form-control" 
+                    [(ngModel)]="groupeData.idAnnuaire" 
+                    name="category" required multiple>
+                <option *ngFor="let annuaire of annauiresList" [value]="annuaire._id">{{ annuaire.firstname+' '+annuaire.lastname }}</option>
+                </select>
+               
+            </div> 
+        -->
+          
+
+   
+       
+            <div>
+                <button class="btn btn-primary py-2 px-4" type="submit" id="sendMessageButton" (click)="addGroup()">Ajouter</button>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+

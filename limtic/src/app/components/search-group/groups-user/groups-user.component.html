@@ -1,0 +1,21 @@
+
+<div class="text-center mb-4">
+    <h2 class="section-title px-5 text-center"><span class="px-2">Groupes</span></h2>
+</div>
+<div class="row">
+  
+    <div *ngFor="let item of groupsList" class="card col-lg-4" style="width: 18rem;">
+    <img src="https://static.vecteezy.com/system/resources/previews/001/834/063/original/interracial-strong-people-protesting-characters-free-vector.jpg" style="width:200px!important;height:200px!important;margin-left: 25%;"    class="card-img-top" alt="...">
+    <div class="card-body">
+      
+        <a href="#" class="text text-dark text-center font-weight-bold">Nom Groupe : {{item.nom}}</a>
+        <br>
+        <a href="#" class="text text-dark">Responsable : {{item.responsable.firstname+' '+item.responsable.lastname}}</a>
+        <br>
+        <a href="#" class="text text-dark">Descreption : {{item.description}}</a>
+
+   
+    </div>
+    </div>
+   
+</div>

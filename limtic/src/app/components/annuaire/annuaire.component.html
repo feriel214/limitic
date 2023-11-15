@@ -1,0 +1,24 @@
+
+<div class="text-center mb-4">
+    <h2 class="section-title px-5 text-center"><span class="px-2">Annuaires</span></h2>
+</div>
+<div class="row">
+  
+    <div *ngFor="let item of annauiresList" class="card col-lg-4" style="width: 18rem;">
+    <img src="https://img.freepik.com/photos-premium/man-with-suit-and-tie-that-says-he-s-smiling_745528-2580.jpg" style="width:150px!important;height:150px!important;margin-left: 25%;"    class="card-img-top" alt="...">
+    <div class="card-body">
+        <a href="#" class="text text-dark text-center font-weight-bold">{{item.firstname+' '+item.lastname}}</a>
+        <br>
+        
+        <a href="#" class="text text-dark">Fonction / Grade : {{item.fonctionGrade}}</a>
+        <br>
+        <a href="#" class="text text-dark">structure De Recherche : {{item.structureDeRecherche}}</a>
+        <br>
+        <a href="#" class="text text-dark">Tél : {{item.tel}}</a>
+        <br>
+        <a href="#" class="text text-dark">Email : {{item.email}}</a>
+   
+    </div>
+    </div>
+   
+</div>
